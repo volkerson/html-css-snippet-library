@@ -1,10 +1,12 @@
+const typeWriter = document.getElementById("typewriter-animation");
+
 // save typewrite text in a string
-const typewriterText = document.getElementById("typewriter-animation").innerText;
+const typewriterText = typeWriter.innerText;
 
 // add the current height of the text as inline style so following elements don't change their position
-const typewriterHeight = document.getElementById("typewriter-animation").clientHeight;
-const elementHeight = document.querySelector(".typewriter");
-elementHeight.style.height = typewriterHeight + 'px';
+const typewriterHeight = typeWriter.clientHeight;
+typeWriter.style.height = typewriterHeight + 'px';
+
 
 // create arr and add all chars
 const animationArr = [];
@@ -15,7 +17,7 @@ for(let i = 0; i < typewriterText.length; i++) {
 }
 
 // empty div to prevent unexpected behaviour of the ansync function
-document.getElementById("typewriter-animation").innerText = "";
+typeWriter.innerText = "";
 
 
 for(let int = 0; int < typewriterText.length; int++) {
@@ -27,15 +29,7 @@ for(let int = 0; int < typewriterText.length; int++) {
             animationArr[int + 1] = '<span class="invisible cursorPosition">' + typewriterText[int + 1] + '</span>';
         }       
         animationStr = animationArr.join("");
-        document.getElementById("typewriter-animation").innerHTML = animationStr;
+        typeWriter.innerHTML = animationStr;
     }, 200 * (int + 1))
     
 }
-
-
-
-
-
-
-
-
