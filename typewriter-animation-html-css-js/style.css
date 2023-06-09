@@ -1,0 +1,30 @@
+body {
+    background-color: rgb(39, 38, 38);   
+    font-family: sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+
+.typewriter {
+    width: 301px;
+    font-size: 29px;
+    line-height: 33px;     
+}
+
+.invisible {
+    color: rgb(39, 38, 38);     
+}
+
+.visible {
+    color: whitesmoke;
+}
+
+.cursorPosition {
+    border-left: 1px solid whitesmoke;
+}
