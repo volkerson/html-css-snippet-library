@@ -1,2 +1,2 @@
-# html-css-snippet-library
-My personal HTML/CSS library
+# My HTML/CSS library
+
