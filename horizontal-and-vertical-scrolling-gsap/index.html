@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Horizontal Scroll Bar</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="page-container">
+        <section class="start">
+            <h1>This is a simple gsap scroll animation</h1>
+        </section>
+        <section class="gsap-animation">
+            <div class="srcoll-container-wrapper">
+                <div class="srcoll-container">
+                    <div class="single-container"><h1>Container 1</h1></div>
+                    <div class="single-container"><h1>Container 2</h1></div>
+                    <div class="single-container"><h1>Container 3</h1></div>
+                </div>
+            </div>    
+        </section>
+        <section class="end">
+            <p>This is just some content that comes after the animation</p>
+        </section>
+    </div>
+<script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.0/gsap.min.js"></script>
+<script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.0/ScrollTrigger.min.js"></script>
+<script defer src="app.js"></script>
+</body>
+</html>
